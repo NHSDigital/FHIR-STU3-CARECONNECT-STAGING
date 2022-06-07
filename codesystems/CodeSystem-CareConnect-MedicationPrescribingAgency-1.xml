@@ -2,10 +2,10 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="CareConnect-MedicationPrescribingAgency-1"/>
 	<url value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-MedicationPrescribingAgency-1"/>
-	<version value="1.0.0"/>
+	<version value="1.1.0"/>
 	<name value="Care Connect Medication Prescribing Agency"/>
 	<status value="draft"/>
-	<date value="2019-12-05T17:01:00+00:00"/>
+	<date value="2022-06-07T17:13:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<description value="A CodeSystem to identify the prescribing agency."/>
 	<copyright value="Copyright © 2019 HL7 UK"/>
@@ -18,5 +18,9 @@
 	<concept>
 		<code value="prescribed-by-another-organisation"/>
 		<display value="Prescribed by another organisation"/>
+	</concept>
+	<concept>
+		<code value="prescribed-by-previous-practice"/>
+		<display value="Prescribed by previous practice"/>
 	</concept>
 </CodeSystem>
