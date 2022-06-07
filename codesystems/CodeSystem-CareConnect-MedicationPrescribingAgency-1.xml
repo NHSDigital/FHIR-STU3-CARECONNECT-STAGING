@@ -19,4 +19,8 @@
 		<code value="prescribed-by-another-organisation"/>
 		<display value="Prescribed by another organisation"/>
 	</concept>
+	<concept>
+		<code value="prescribed-by-previous-practice"/>
+		<display value="Prescribed by previous practice"/>
+	</concept>
 </CodeSystem>
