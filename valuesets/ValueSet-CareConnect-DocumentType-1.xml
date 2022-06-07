@@ -5,7 +5,7 @@
 	<version value="1.2.0"/>
 	<name value="Care Connect Document Type"/>
 	<status value="draft"/>
-	<date value="2018-11-05T00:00:00+00:00"/>
+	<date value="20122-06-06T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<description value="A set of codes that describe a type of document. Selected from the &#39;Record composition type&#39; simple reference set of the SNOMED CT UK coding system.."/>
 	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
