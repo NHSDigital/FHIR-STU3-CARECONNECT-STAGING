@@ -28,6 +28,7 @@
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
+  <snapshot>
   <differential>
     <element id="Extension">
       <path value="Extension" />
@@ -56,4 +57,5 @@
       </binding>
     </element>
   </differential>
+  </snapshot>
 </StructureDefinition>
