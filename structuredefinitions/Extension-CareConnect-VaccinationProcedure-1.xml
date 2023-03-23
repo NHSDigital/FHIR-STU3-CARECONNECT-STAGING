@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-05-03T12:58:25.939+01:00" />
+    <lastUpdated value="2023-03-23T13:05:43.7886887+00:00" />
   </meta>
   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1" />
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="Extension-CareConnect-VaccinationProcedure-1" />
   <status value="draft" />
-  <date value="2018-11-05" />
+  <date value="2023-03-23" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="INTEROPen" />
@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <description value="An extension to hold an immunization procedure code." />
-  <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ " />
+  <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/" />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
@@ -47,6 +47,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -54,6 +55,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -87,6 +89,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -125,6 +128,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -132,6 +136,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -166,6 +171,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -176,12 +182,11 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.valueCodeableConcept:valueCodeableConcept">
+    <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <short value="A code from the SNOMED Clinical Terminology UK coding system to record a vaccination procedure." />
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
-      <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
       <base>
@@ -199,9 +204,10 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <description value="A code from SNOMED Clinical Terminology UK" />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-VaccinationProcedure-1" />
@@ -228,7 +234,7 @@
       <path value="Extension.url" />
       <fixedUri value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1" />
     </element>
-    <element id="Extension.valueCodeableConcept:valueCodeableConcept">
+    <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <short value="A code from the SNOMED Clinical Terminology UK coding system to record a vaccination procedure." />
@@ -237,7 +243,7 @@
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <description value="A code from SNOMED Clinical Terminology UK" />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-VaccinationProcedure-1" />
