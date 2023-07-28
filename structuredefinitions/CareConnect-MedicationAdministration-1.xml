@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationAdministration-1" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="CareConnect-MedicationAdministration-1" />
   <status value="draft" />
-  <date value="2019-04-05T13:31:31.094+01:00" />
-  <publisher value="NHS Digital" />
+  <date value="2023-07-28T13:42:35+0000" />
+  <publisher value="NHS England" />
   <contact>
     <name value="Interoperability Team" />
     <telecom>
