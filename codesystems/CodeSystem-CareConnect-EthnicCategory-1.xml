@@ -5,25 +5,25 @@
 		<valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/p/pds/pds_ethnic_category_code_de.asp?shownav=0"/>
 	</extension>
 	<url value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1"/>
-	<version value="1.1.0"/>
+	<version value="1.2.0"/>
 	<name value="Care Connect Ethnic Category"/>
 	<status value="draft"/>
-	<date value="2018-11-02T00:00:00+00:00"/>
+	<date value="2023-08-30T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<description value="A CodeSystem to identify the ethnicity of a Person, as specified by the Person. This vocabulary describes a persons ethnic category, it is an extension of the Ethnic Category Code described in the NHS Data Model and Dictionary."/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
 		<code value="A"/>
-		<display value="British, Mixed British"/>
+		<display value="White - British"/>
 	</concept>
 	<concept>
 		<code value="B"/>
-		<display value="Irish"/>
+		<display value="White - Irish"/>
 	</concept>
 	<concept>
 		<code value="C"/>
-		<display value="Any other White background"/>
+		<display value="White - Any other White background"/>
 	</concept>
 	<concept>
 		<code value="C2"/>
@@ -127,19 +127,19 @@
 	</concept>
 	<concept>
 		<code value="D"/>
-		<display value="White and Black Caribbean"/>
+		<display value="Mixed - White and Black Caribbean"/>
 	</concept>
 	<concept>
 		<code value="E"/>
-		<display value="White and Black African"/>
+		<display value="Mixed - White and Black African"/>
 	</concept>
 	<concept>
 		<code value="F"/>
-		<display value="White and Asian"/>
+		<display value="Mixed - White and Asian"/>
 	</concept>
 	<concept>
 		<code value="G"/>
-		<display value="Any other mixed background"/>
+		<display value="Mixed - Any other mixed background"/>
 	</concept>
 	<concept>
 		<code value="GA"/>
@@ -167,19 +167,19 @@
 	</concept>
 	<concept>
 		<code value="H"/>
-		<display value="Indian or British Indian"/>
+		<display value="Asian or Asian British - Indian"/>
 	</concept>
 	<concept>
 		<code value="J"/>
-		<display value="Pakistani or British Pakistani"/>
+		<display value="Asian or Asian British - Pakistani"/>
 	</concept>
 	<concept>
 		<code value="K"/>
-		<display value="Bangladeshi or British Bangladeshi"/>
+		<display value="Asian or Asian British - Bangladeshi"/>
 	</concept>
 	<concept>
 		<code value="L"/>
-		<display value="Any other Asian background"/>
+		<display value="Asian or Asian British - Any other Asian background"/>
 	</concept>
 	<concept>
 		<code value="LA"/>
@@ -223,15 +223,15 @@
 	</concept>
 	<concept>
 		<code value="M"/>
-		<display value="Caribbean"/>
+		<display value="Black or Black British - Caribbean"/>
 	</concept>
 	<concept>
 		<code value="N"/>
-		<display value="African"/>
+		<display value="Black or Black British - African"/>
 	</concept>
 	<concept>
 		<code value="P"/>
-		<display value="Any other Black background"/>
+		<display value="Black or Black British - Any other Black background"/>
 	</concept>
 	<concept>
 		<code value="PA"/>
@@ -255,11 +255,11 @@
 	</concept>
 	<concept>
 		<code value="R"/>
-		<display value="Chinese"/>
+		<display value="Other Ethnic Groups - Chinese"/>
 	</concept>
 	<concept>
 		<code value="S"/>
-		<display value="Any other ethnic group"/>
+		<display value="Other Ethnic Groups - Any other ethnic group"/>
 	</concept>
 	<concept>
 		<code value="SA"/>
@@ -284,5 +284,9 @@
 	<concept>
 		<code value="Z"/>
 		<display value="Not stated"/>
+	</concept>
+	<concept>
+		<code value="99" />
+		<display value="Not known" />
 	</concept>
 </CodeSystem>
